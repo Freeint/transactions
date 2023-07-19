@@ -1,3 +1,29 @@
+:root {
+    --color-white: #ffffff;
+    --color-light: #f0eff5;
+    --color-gray-light: #86848c;
+    --color-gray-dark: #56555e;
+    --color-dark:#27282f;
+    --color-primary: rgb(71, 7, 234);
+    --color-success: rgb(34, 202, 75);
+    --color-danger: rgb(255, 67, 54);
+    --color-warning: rgb(234, 181, 7);
+    --color-purple:rgb(160, 99, 245);
+   
+    --color-primary-light: rgba(71, 7, 234, 0.2);
+    --color-success-light: rgba(34, 202, 75, 0.2);
+    --color-danger-light: rgba(255, 67, 54, 0.2);
+    --color-purple-light: rgba(160, 99, 245, 0.2);
+   
+    --card-padding: 1.6rem;
+    --padding-1: 1rem;
+    --padding-2: 8px;
+   
+   --card-border-radius: 1.6rem;
+   --border-radius-1: 1rem;
+   --border-radius-2: 6px;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -11,21 +37,21 @@ body {
     display: grid;
     place-items: center;
     margin-top: 5rem;
+    background: var(--color-light);
 }
 
 h2 {
     margin-bottom: 1.2rem;
-    margin-left: 26%;
+    padding-left: 0.5rem;
     color: black;
-    text-decoration: underline;
-    justify-content: flex-start;
     border-radius: 7px;
+    width: 15rem;
 }
 
 form {
     display: flex;
     flex-direction: column;
-    width: 24rem;
+    width: 15rem;
     gap: 1rem;
     border-radius: 7px;
 }
@@ -36,7 +62,8 @@ textarea {
     padding: 1.4rem;
     background: transparent;
     border: 1px solid black;
-    border-radius: 7px;
+    border-radius: 5px;
+    background-color: white;
 }
 
 textarea {
@@ -55,9 +82,17 @@ button {
     width: 8rem;
     padding: 1.4rem;
     cursor: pointer;
-    background: #985fe4;
+    background: var(--color-primary);
     color: white;
-    margin-left: 32%;
-    margin-bottom: 30%;
-    border-radius: 7px;
+    margin-left: 20%;
+    margin-bottom: 20%;
+    border-radius: 5px;
+}
+
+h5 {
+    position: relative;
+    background-color: black;
+    border-radius: 5px;
+    padding-left: 2.3rem;
+    color: white;
 }
